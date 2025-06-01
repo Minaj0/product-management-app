@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar'
 import { Sidebar } from '../components/Sidebar'
 import { ProductActions } from '../components/ProductActions'
 import { ProductCard } from '../components/ProductCard'
+import { Breadcrumbs } from '../components/Breadcrumbs'
 
 export const Homepage = () => {
   return (
@@ -10,7 +11,10 @@ export const Homepage = () => {
       {/* navbar */}
       <Navbar />
       {/* header */}
-      <ProductActions />
+      <div className="header flex items-center mx-5">
+        <Breadcrumbs />
+        <ProductActions />
+      </div>
       {/* rest of the contents */}
       <div className='flex'>
         {/* sidebar */}

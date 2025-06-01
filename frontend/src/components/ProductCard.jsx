@@ -1,7 +1,7 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const ProductCard = () => {
-
     const rating = <div className="rating rating-xs">
         <input type="radio" name="rating-1" className="mask mask-star" aria-label="1 star" />
         <input type="radio" name="rating-1" className="mask mask-star" aria-label="2 star" defaultChecked />
@@ -10,8 +10,10 @@ export const ProductCard = () => {
         <input type="radio" name="rating-1" className="mask mask-star" aria-label="5 star" />
     </div>
 
+    const navigate = useNavigate()
+    
     return (
-        <a className="card w-66 shadow-lg">
+        <div className="card w-66 shadow-lg" onClick={()=>navigate('/details')}>
             <figure>
                 <img
                     src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -31,6 +33,6 @@ export const ProductCard = () => {
                 <p>$Price</p>
                 <div>{rating}</div>
             </div>
-        </a>
+        </div>
     )
 }
