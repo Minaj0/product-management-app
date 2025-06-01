@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@theme {
+    --font-script: "Comfortaa",
+        sans-serif;
+    --color-pri: #adb5bd;
+    --color-sec: #6c757d;
+}
+
