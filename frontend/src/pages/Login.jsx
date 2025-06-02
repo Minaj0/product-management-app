@@ -9,7 +9,6 @@ export const Login = () => {
         username: '',
         password: ''
     });
-
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showToast, setShowToast] = useState(false);
     const [toastMessage, setToastMessage] = useState('');
@@ -120,7 +119,7 @@ export const Login = () => {
 
 
                     <div className="form-control mt-4">
-                        <button className='btn btn-outline hover:text-sec text-xl p-6'>SignIn</button>
+                        <button className='btn btn-outline shadow-xl hover:text-sec text-xl p-6'>SignIn</button>
                     </div>
                 </form>
 
@@ -129,7 +128,7 @@ export const Login = () => {
                     <h1 className='flex font-bold text-4xl'>Hello, Sign Up here.</h1>
                     <p className='text-2xl'>Create a new user.</p>
                     <button
-                        className='btn btn-outline hover:text-sec text-xl p-6 mt-4'
+                        className='btn btn-outline shadow-xl hover:text-sec text-xl p-6 mt-4'
                         onClick={() => navigate('/')}
                     >
                         SignUp

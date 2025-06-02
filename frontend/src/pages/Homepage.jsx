@@ -1,9 +1,11 @@
 import React from 'react'
 import { Navbar } from '../components/Navbar'
 import { Sidebar } from '../components/Sidebar'
-import { ProductActions } from '../components/ProductActions'
 import { ProductCard } from '../components/ProductCard'
 import { Breadcrumbs } from '../components/Breadcrumbs'
+import { CategoryAction } from '../components/CategoryAction'
+import { SubcategoryAction } from '../components/SubcategoryAction'
+import { ProductAction } from '../components/ProductAction'
 
 export const Homepage = () => {
   return (
@@ -11,9 +13,17 @@ export const Homepage = () => {
       {/* navbar */}
       <Navbar />
       {/* header */}
-      <div className="header flex items-center mx-5">
-        <Breadcrumbs />
-        <ProductActions />
+      <div className="header flex items-center mx-5 justify-between">
+        <div>
+          <Breadcrumbs />
+        </div>
+        <div className='flex gap-3 py-6'>
+          <CategoryAction />
+          <SubcategoryAction />
+          <ProductAction />
+        </div>
+
+
       </div>
       {/* rest of the contents */}
       <div className='flex'>
@@ -22,7 +32,7 @@ export const Homepage = () => {
           <Sidebar />
         </div>
         {/* main content */}
-        <div flex-1>
+        <div>
           <ProductCard />
         </div>
       </div>

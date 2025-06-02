@@ -166,7 +166,7 @@ export const Registration = () => {
 
                     <div className="form-control mt-5">
                         <button
-                            className='btn btn-outline hover:text-sec p-6 text-xl'
+                            className='btn btn-outline shadow-xl hover:text-sec p-6 text-xl'
                             disabled={isSubmitting}
                         >
                             {isSubmitting ? (
