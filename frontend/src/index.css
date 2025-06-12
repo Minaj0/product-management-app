@@ -3,10 +3,11 @@
 @plugin "daisyui";
 
 
+
 @theme {
     --font-script: "Comfortaa",
         sans-serif;
-    --color-pri: #cae9ff;
-    --color-sec: #5fa8d3;
+    --color-pri: #f8f9fa;
+    --color-sec: #003f88;
 }
 

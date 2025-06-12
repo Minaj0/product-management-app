@@ -47,7 +47,7 @@ export const CategoryAction = () => {
 
   return (
     <div>
-      <label htmlFor="my_modal_6" className="btn btn-outline hover:text-sec">Add Category</label>
+      <label htmlFor="category" className="btn btn-outline hover:text-sec">Add Category</label>
 
       {showToast && (
         <div className={`toast toast-top toast-center ${toastType === 'success' ? 'alert-success' : 'alert-error'}`}>
@@ -57,15 +57,15 @@ export const CategoryAction = () => {
         </div>
       )}
 
-      <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+      <input type="checkbox" id="category" className="modal-toggle" />
       <div className="modal" role="dialog">
-        <div className="modal-box bg-pri w-sm">
+        <div className="modal-box bg-pri">
           <h3 className="text-lg font-bold flex justify-center mb-5">Add Category</h3>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
               required
-              className='input w-full bg-transparent border-sec placeholder:text-sec'
+              className='input w-full bg-transparent border-sec'
               placeholder='Enter category name'
               value={category}
               onChange={(e) => setCategory(e.target.value)}
@@ -78,7 +78,7 @@ export const CategoryAction = () => {
               >
                 {isSubmitting ? 'Adding...' : 'Add'}
               </button>
-              <label htmlFor="my_modal_6" className="btn btn-outline hover:text-sec">
+              <label htmlFor="category" className="btn btn-outline hover:text-sec">
                 Discard
               </label>
             </div>
