@@ -10,7 +10,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className='flex items-center justify-around p-6 shadow-lg sticky top-0 gap-3 font-script'>
+        <div className='flex items-center justify-around bg-base-100 p-6 shadow-lg sticky top-0 gap-3 font-script'>
 
             <div className="brand lg:flex-1">
             </div>

@@ -65,7 +65,7 @@ export const Registration = () => {
     };
 
     return (
-        <div className='min-h-screen hero bg-pri text-sec placeholder:text-sec font-script'>
+        <div className='min-h-screen hero bg-base-100 text-sec placeholder:text-sec font-script'>
             {/* DaisyUI Toast Notification */}
             {showToast && (
                 <div className={`toast toast-top toast-center ${toastType === 'success' ? 'alert-success' : 'alert-error'}`}>

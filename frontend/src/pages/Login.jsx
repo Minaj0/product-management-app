@@ -55,7 +55,7 @@ export const Login = () => {
     }
 
     return (
-        <div className='hero bg-pri min-h-screen text-sec font-script'>
+        <div className='hero bg-base-100 min-h-screen text-sec font-script'>
             {/* =========================toast============================ */}
             {showToast && (
                 <div className={`toast toast-top toast-center ${toastType == 'success' ? 'alert-success' : 'alert-error'}`}>

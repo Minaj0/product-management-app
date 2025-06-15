@@ -59,7 +59,7 @@ export const CategoryAction = () => {
 
       <input type="checkbox" id="category" className="modal-toggle" />
       <div className="modal" role="dialog">
-        <div className="modal-box bg-pri">
+        <div className="modal-box ">
           <h3 className="text-lg font-bold flex justify-center mb-5">Add Category</h3>
           <form onSubmit={handleSubmit}>
             <input

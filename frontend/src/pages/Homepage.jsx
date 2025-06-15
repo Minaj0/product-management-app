@@ -9,7 +9,7 @@ import { ProductAction } from '../components/ProductAction'
 
 export const Homepage = () => {
   return (
-    <div className='mainlayout min-h-screen bg-pri text-sec font-script'>
+    <div className='mainlayout min-h-screen bg-base-100 text-sec font-script'>
       {/* navbar */}
       <Navbar />
       {/* header */}

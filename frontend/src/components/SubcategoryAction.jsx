@@ -92,7 +92,7 @@ export const SubcategoryAction = () => {
 
       <input type="checkbox" id="subcategory" className="modal-toggle" />
       <div className="modal" role="dialog">
-        <div className="modal-box flex flex-col gap-3 bg-pri">
+        <div className="modal-box flex flex-col gap-3 ">
           <h3 className="text-lg font-bold py-3 text-center">Add Subcategory</h3>
 
           {/* Custom Dropdown */}
@@ -100,7 +100,7 @@ export const SubcategoryAction = () => {
             <button
               type="button"
               onClick={() => setIsDropDownOpen(prev => !prev)}
-              className="btn btn-outline w-full flex justify-between items-center"
+              className="btn btn-outline w-full flex justify-between items-center hover:text-sec"
             >
               {selectedCategory
                 ? categoryList.find(cat => cat._id === selectedCategory)?.category
@@ -109,7 +109,7 @@ export const SubcategoryAction = () => {
             </button>
 
             {isDropDownOpen && (
-              <ul className="absolute z-50 w-full bg-base-100 rounded-box shadow mt-1 max-h-40 overflow-y-auto">
+              <ul className="absolute z-50 w-full bg-base-100 rounded-box shadow mt-1 max-h-36 overflow-y-auto">
                 {categoryList.map(list => (
                   <li key={list._id}>
                     <button
@@ -135,8 +135,8 @@ export const SubcategoryAction = () => {
           />
 
           <div className="modal-action justify-center">
-            <button htmlFor="subcategory" type="submit" className="btn btn-outline" >ADD</button>
-            <label htmlFor="subcategory" className="btn btn-outline">DISCARD</label>
+            <button htmlFor="subcategory" type="submit" className="btn btn-outline hover:text-sec" >ADD</button>
+            <label htmlFor="subcategory" className="btn btn-outline hover:text-sec">DISCARD</label>
           </div>
         </div>
       </div>
