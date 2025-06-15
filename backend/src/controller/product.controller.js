@@ -5,13 +5,12 @@ exports.addProduct = async (req, res) => {
     try {
         const { title, subCategory, description, varients } = req.body;
 
-        if (!title || !subCategory || !description || !req.body.varients) {
+        // const parsedVarients = JSON.parse(req.body.varients);
+        if (!title || !subCategory || !description || !varients) {
             return res.status(400).json({
                 error: "All the fields are required"
             });
         }
-
-        const parsedVarients = JSON.parse(req.body.varients)
 
         const subCategoryId = await subCategories.findById(subCategory).select('subCategory');
         if (!subCategoryId) {
@@ -28,7 +27,7 @@ exports.addProduct = async (req, res) => {
         const newProduct = await products.create({
             title,
             subCategory: subCategoryId,
-            varients: parsedVarients,
+            varients,
             description,
             image: imageArray
         });

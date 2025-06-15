@@ -4,11 +4,11 @@ const subCategorySchema = mongoose.Schema({
     category: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Categories',
-        require: true
+        required: true
     },
     subCategory: {
         type: String,
-        require: true,
+        required: true,
     }
 });
 
